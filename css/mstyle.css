@@ -1,0 +1,237 @@
+
+:root
+{
+    --main-color:#a800a8;
+    --shadow-black-100:0 5px 15px rgba(0,0,0,0.1);
+    --shadow-black-300:0 5px 15px rgba(0,0,0,0.3);
+    --black-900:#000;
+    --black-400:#555555;
+    --black-100:#f7f7f7;
+    --white:#fff;
+    --black-alpha-100:rgba(0,0,0,0.05);
+}
+
+
+.btn-2
+{
+    background-color: var(--white);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    color: var(--main-color);
+    font-size: 16px;
+    text-transform: capitalize;
+    box-shadow: var(--shadow-black-100);
+    font-weight: 500;
+    
+}
+.btn-2:hover
+{
+    color: var(--white);
+    background-color: var(--main-color);
+}
+.section-padding
+{
+    padding: 80px 0;
+}
+.section-title
+{
+    margin-bottom: 60px;
+}
+.section-title h4
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--black-900);
+    text-transform: capitalize;
+    text-align: center;
+}
+.section-title h2
+{
+    font-size: 30px;
+    color: var(--black-900);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+.section-title h2 span 
+{
+    color: var(--main-color);
+}
+
+
+
+
+/* contact us */
+.contact 
+{
+    background-color: var(--shadow-black-100);
+}
+.contact-info h3
+{
+    font-size: 22px;
+    color: var(--black-900);
+    font-weight: 500;
+    margin: 0 0 40px;
+}
+.contact-info-item
+{
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 30px;
+}
+.contact-info-item i
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    text-align: center;
+    line-height: 38px;
+}
+.contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    color: var(--black-900);
+}
+.contact-info-item p
+{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+    color: var(--black-400);
+}
+.contact-form .form-group
+{
+    margin-bottom: 25px;
+}
+.contact-form .form-control
+{
+    height: 52px;
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 30px;
+    padding: 0 24px;
+    color: var(--black-900);
+    background-color: var(--white);
+    transition: 0.5s ease;
+}
+.contact-form textarea.form-control
+{
+    height: 140px;
+    padding: 12px;
+    resize: none;
+}
+.contact-form .form-control:focus
+{
+    border-color: var(--main-color);
+}
+/* footer */
+
+/* responsive */
+@media(max-width:991px)
+{
+    
+}
+@media(max-width:767px)
+{
+    
+    .call-action-content .action-title
+    {
+        font-size: 30px;
+    }
+    .section-title h2
+    {
+        font-size: 35px;
+    }
+    .contact-form
+    {
+        margin-top: 20px;
+    }
+    
+
+
+}
+.gallery-item {
+    box-shadow: 0 0 .1875rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item:before,
+.gallery-item:after,
+.gallery-item .gallery-item-content:before,
+.gallery-item .gallery-item-content:after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.gallery-item:after {
+    top: 50%;
+}
+
+.gallery-item:hover:after {
+    top: 0;
+    opacity: 1;
+}
+
+.gallery-item:hover:before {
+    left: 50%;
+    opacity: 1;
+}
+
+.gallery-item .gallery-item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.gallery-item:hover .gallery-item-content {
+    opacity: 1;
+}
+
+.gallery-item .gallery-item-content:before,
+.gallery-item .gallery-item-content:after {
+    top: 0;
+    left: 50%;
+    z-index: -1;
+}
+
+.gallery-item:hover .gallery-item-content:before {
+    top: 50%;
+    opacity: 1;
+}
+
+.gallery-item .gallery-item-content:after {
+    top: 50%;
+}
+
+.gallery-item:hover .gallery-item-content:after {
+    left: 0;
+    opacity: 1;
+}
+
